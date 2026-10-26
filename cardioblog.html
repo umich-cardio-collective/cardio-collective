@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - The Cardio Collective</title>
+    <base target="_top" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#00274C",
+              maize: "#FFCB05",
+              darkbg: "#0B1120",
+              cardbg: "#1E293B",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0b1120;
+        color: #f1f5f9;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b1120;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00274c;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffcb05;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen flex flex-col antialiased relative selection:bg-maize selection:text-navy pt-20"
+  >
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-[#050B14]/90 backdrop-blur-md fixed w-full z-40 top-0 border-b border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://lh3.googleusercontent.com/d/1Z4pZlh9Hk_q9PFXOQM0k-1BPSC4rvorl"
+              alt="The Cardio Collective Logo"
+              class="h-12 w-12 rounded-full border border-gray-700 object-cover"
+            />
+            <span class="font-bold text-xl text-white tracking-tight"
+              >The Cardio Collective</span
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden md:flex items-center space-x-8 font-medium text-sm"
+          >
+            <a
+              href="index.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Home</a
+            >
+            <a
+              href="members.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Members</a
+            >
+            <a
+              href="projects.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Projects</a
+            >
+            <a href="cardioblog.html" class="text-maize transition">Blog</a>
+            <a
+              href="contactUs.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="flex items-center md:hidden">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-300 hover:text-maize focus:outline-none p-2"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Blog Content -->
+    <main class="flex-grow py-12 lg:py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <!-- Page Header -->
+        <div class="text-center space-y-3">
+          <h1
+            class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight"
+          >
+            Our Blog
+          </h1>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Stay up to date with student insights, heart health education, and
+            latest updates from The Cardio Collective.
+          </p>
+        </div>
+
+        <!-- SECTION 1: CURRENT BLOG POST -->
+        <section
+          class="bg-[#1E293B]/60 border border-gray-800 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-sm"
+        >
+          <div class="p-6 sm:p-8 lg:p-10 space-y-6">
+            <!-- Header Badge & Meta info -->
+            <div
+              class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800 pb-4"
+            >
+              <span
+                class="inline-flex items-center gap-1.5 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider"
+              >
+                <i class="fa-solid fa-star text-xs"></i> Current Issue
+              </span>
+              <div class="text-xs text-gray-400 flex items-center gap-4">
+                <span
+                  ><i class="fa-regular fa-calendar mr-1"></i> Fall 2026</span
+                >
+                <span
+                  ><i class="fa-regular fa-user mr-1"></i> Executive Board</span
+                >
+              </div>
+            </div>
+
+            <!-- Article Title -->
+            <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">
+              Understanding Cardiovascular Wellness on Campus
+            </h2>
+
+            <!-- Article Image Banner -->
+            <div
+              class="rounded-xl overflow-hidden border border-gray-800 max-h-80 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
+                alt="Current Blog Cover"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Article Content Text -->
+            <div
+              class="space-y-4 text-gray-300 leading-relaxed font-light text-base sm:text-lg"
+            >
+              <p>
+                Welcome to the latest issue of The Cardio Collective blog! As
+                students balance coursework, extracurriculars, and personal
+                commitments, maintaining cardiovascular health often takes a
+                backseat. In this article, we break down essential habits for
+                keeping your heart healthy during the semester.
+              </p>
+              <p>
+                From quick 20-minute cardio routines to understanding dietary
+                choices in dining halls, our team shares practical,
+                evidence-backed tips designed specifically for university life.
+              </p>
+            </div>
+
+            <!-- Optional PDF Download Action for Current Blog -->
+            <div
+              class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-gray-800"
+            >
+              <span class="text-xs text-gray-400"
+                >Want to read offline or share?</span
+              >
+              <!-- Replace href with your PDF Google Drive link when ready -->
+              <a
+                href="#"
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition duration-300"
+              >
+                <i class="fa-solid fa-file-pdf"></i> Download PDF Edition
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: PAST BLOG ARCHIVES (DROPDOWN / ACCORDION) -->
+        <section class="space-y-6">
+          <div class="border-b border-gray-800 pb-4">
+            <h2
+              class="text-2xl font-bold text-white tracking-tight flex items-center gap-3"
+            >
+              <i class="fa-solid fa-box-archive text-maize text-xl"></i>
+              Past Blog Archives
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              Select an edition from the archive below to view or download as a
+              PDF.
+            </p>
+          </div>
+
+          <!-- Styled Collapsible Accordion / Dropdown Box -->
+          <div
+            class="bg-[#1E293B]/60 border border-gray-800 rounded-xl overflow-hidden shadow-lg"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center p-5 cursor-pointer bg-[#050B14]/60 hover:bg-[#050B14] transition select-none"
+              >
+                <span
+                  class="font-semibold text-white text-base sm:text-lg flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-folder-open text-blue-400"></i> Browse
+                  Older Issues (PDFs)
+                </span>
+                <span
+                  class="text-gray-400 group-open:rotate-180 transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </summary>
+
+              <!-- List of PDF Links -->
+              <div
+                class="p-4 sm:p-6 border-t border-gray-800 space-y-3 bg-[#0B1120]/50"
+              >
+                <!-- PDF Item 1 -->
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-lg bg-[#1E293B] border border-gray-800 hover:border-gray-700 transition"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-file-pdf text-red-400 text-2xl"></i>
+                    <div>
+                      <h3 class="font-medium text-white text-sm">
+                        Spring 2026 - Heart Awareness Week Special
+                      </h3>
+                      <p class="text-xs text-gray-400">
+                        Published April 2026 • PDF Edition
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Replace href with your PDF Google Drive link when ready -->
+                  <a
+                    href="YOUR_PDF_LINK_HERE"
+                    target="_blank"
+                    class="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 hover:text-white text-xs font-semibold px-4 py-2 rounded-md border border-gray-700 transition"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+                    PDF
+                  </a>
+                </div>
+
+                <!-- PDF Item 2 -->
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-lg bg-[#1E293B] border border-gray-800 hover:border-gray-700 transition"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-file-pdf text-red-400 text-2xl"></i>
+                    <div>
+                      <h3 class="font-medium text-white text-sm">
+                        Winter 2025 - Nutrition & Cardiovascular Health
+                      </h3>
+                      <p class="text-xs text-gray-400">
+                        Published December 2025 • PDF Edition
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Replace href with your PDF Google Drive link when ready -->
+                  <a
+                    href="YOUR_PDF_LINK_HERE"
+                    target="_blank"
+                    class="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 hover:text-white text-xs font-semibold px-4 py-2 rounded-md border border-gray-700 transition"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+                    PDF
+                  </a>
+                </div>
+
+                <!-- PDF Item 3 -->
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-lg bg-[#1E293B] border border-gray-800 hover:border-gray-700 transition"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-file-pdf text-red-400 text-2xl"></i>
+                    <div>
+                      <h3 class="font-medium text-white text-sm">
+                        Fall 2025 - Inaugural Student Research Showcase
+                      </h3>
+                      <p class="text-xs text-gray-400">
+                        Published September 2025 • PDF Edition
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Replace href with your PDF Google Drive link when ready -->
+                  <a
+                    href="YOUR_PDF_LINK_HERE"
+                    target="_blank"
+                    class="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 hover:text-white text-xs font-semibold px-4 py-2 rounded-md border border-gray-700 transition"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+                    PDF
+                  </a>
+                </div>
+              </div>
+            </details>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Sticky Footer -->
+    <footer
+      class="bg-[#050B14] text-gray-400 py-8 border-t border-gray-800 mt-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm"
+      >
+        <div class="flex items-center mb-4 md:mb-0">
+          <span class="font-bold text-white text-base mr-2"
+            >The Cardio Collective</span
+          >
+        </div>
+        <p>&copy; 2026 The Cardio Collective at the University of Michigan.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

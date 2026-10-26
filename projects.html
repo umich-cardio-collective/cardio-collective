@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - The Cardio Collective</title>
+    <base target="_top" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#00274C",
+              maize: "#FFCB05",
+              darkbg: "#0B1120",
+              cardbg: "#1E293B",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0b1120;
+        color: #f1f5f9;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b1120;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00274c;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffcb05;
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased relative selection:bg-maize selection:text-navy pt-20"
+  >
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-[#050B14]/90 backdrop-blur-md fixed w-full z-40 top-0 border-b border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://lh3.googleusercontent.com/d/1Z4pZlh9Hk_q9PFXOQM0k-1BPSC4rvorl"
+              alt="The Cardio Collective Logo"
+              class="h-12 w-12 rounded-full border border-gray-700 object-cover"
+            />
+            <span class="font-bold text-xl text-white tracking-tight"
+              >The Cardio Collective</span
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden md:flex items-center space-x-8 font-medium text-sm"
+          >
+            <a
+              href="index.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Home</a
+            >
+            <a
+              href="members.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Members</a
+            >
+            <a href="projects.html" class="text-maize transition">Projects</a>
+            <a
+              href="cardioblog.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Blog</a
+            >
+            <a
+              href="contactUs.html"
+              class="text-gray-300 hover:text-maize transition"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="flex items-center md:hidden">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-300 hover:text-maize focus:outline-none p-2"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="py-16 bg-[#001122] border-b border-gray-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+          Our Projects & Initiatives
+        </h1>
+        <p class="text-lg text-gray-300 max-w-2xl font-light">
+          Discover our hands-on workshops, clinical outreach, educational
+          opportunities, and public health initiatives designed for students and
+          the Ann Arbor community.
+        </p>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="py-20 min-h-[70vh]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+            Key Initiatives
+          </h2>
+          <div class="w-16 h-1 bg-maize rounded-full"></div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project 1: CAN -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-children"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              CAN (Cardiovascular Awareness)
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              We travel to local schools to teach elementary students about the
+              importance of cardiovascular health. By starting early, we aim to
+              build lifelong healthy habits in the youth of our community.
+            </p>
+          </div>
+
+          <!-- Project 2: Keynote Speakers -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Keynote Speaker Series
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              We host medical professionals and experts to share their clinical
+              experiences and research with our members. Join us for our
+              upcoming event featuring a guest doctor in early November!
+            </p>
+          </div>
+
+          <!-- Project 3: Volunteering -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Community Volunteering
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              Our members actively participate in local health initiatives and
+              community service. We proudly partner with organizations like the
+              Gift of Life Foundation to support organ and tissue donation
+              awareness.
+            </p>
+          </div>
+
+          <!-- Project 4: CPR Training -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">CPR Training</h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              Free, accessible hands-on CPR and AED training sessions offered to
+              students and community members across campus. We equip
+              participants with life-saving skills and confidence to respond
+              during cardiovascular emergencies.
+            </p>
+          </div>
+
+          <!-- Project 5: Suture Clinics -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">Suture Clinics</h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              Interactive hands-on clinical workshops teaching basic surgical
+              knot-tying and suturing techniques. Guided by medical
+              professionals and upperclassmen, students gain valuable exposure
+              to surgical fundamentals.
+            </p>
+          </div>
+
+          <!-- Project 6: Survival Flight Tours -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-helicopter"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Survival Flight Tours
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              Exclusive guided educational tours of Michigan Medicine's Survival
+              Flight facilities. Members get a behind-the-scenes look at
+              critical care air transport, life-support equipment, and
+              conversations with flight nurses and paramedics.
+            </p>
+          </div>
+
+          <!-- Project 7: Heart Friendly Blog -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 p-8 hover:border-maize/50 transition duration-300 flex flex-col group"
+          >
+            <div
+              class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center text-maize text-2xl mb-6 group-hover:scale-110 transition duration-300 border border-gray-700"
+            >
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Heart Friendly Blog
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm">
+              A student-driven digital publication translating complex
+              cardiovascular research, preventive health habits, and clinical
+              topics into accessible, engaging articles for the general public.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#050B14] text-gray-400 py-8 border-t border-gray-800">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm"
+      >
+        <div class="flex items-center mb-4 md:mb-0">
+          <span class="font-bold text-white text-base mr-2"
+            >The Cardio Collective</span
+          >
+        </div>
+        <p>&copy; 2026 The Cardio Collective at the University of Michigan.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
