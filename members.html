@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Members - The Cardio Collective</title>
+    <title>Our Team &amp; Board | The Cardio Collective</title>
+    <meta
+      name="description"
+      content="Meet the founder and student executive board leading The Cardio Collective at the University of Michigan, and learn how to join our open club."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp" />
+    <link rel="apple-touch-icon" href="assets/logo.webp" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:site_name" content="The Cardio Collective" />
+    <meta property="og:title" content="Our Team &amp; Board | The Cardio Collective" />
+    <meta
+      property="og:description"
+      content="Meet the founder and student executive board leading The Cardio Collective at the University of Michigan."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://umich-cardio-collective.github.io/cardio-collective/members.html"
+    />
+    <meta
+      property="og:image"
+      content="https://umich-cardio-collective.github.io/cardio-collective/assets/logo.webp"
+    />
     <base target="_top" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -63,7 +88,7 @@
         <div class="flex justify-between h-20 items-center">
           <div class="flex items-center gap-3">
             <img
-              src="https://lh3.googleusercontent.com/d/1Z4pZlh9Hk_q9PFXOQM0k-1BPSC4rvorl"
+              src="assets/logo.webp"
               alt="The Cardio Collective Logo"
               class="h-12 w-12 rounded-full border border-gray-700 object-cover"
             />
@@ -104,49 +129,396 @@
             <button
               id="mobile-menu-btn"
               class="text-gray-300 hover:text-maize focus:outline-none p-2"
+              aria-label="Toggle menu"
             >
               <i class="fa-solid fa-bars text-2xl"></i>
             </button>
           </div>
         </div>
       </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#050B14] border-b border-gray-800 px-4 pt-2 pb-4 space-y-2 text-sm font-medium"
+      >
+        <a
+          href="index.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Home</a
+        >
+        <a href="members.html" class="block py-2 text-maize transition"
+          >Members</a
+        >
+        <a
+          href="projects.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Projects</a
+        >
+        <a
+          href="cardioblog.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Blog</a
+        >
+        <a
+          href="contactUs.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Contact Us</a
+        >
+      </div>
     </nav>
 
-    <!-- Header Banner -->
-    <header class="py-16 bg-[#001122] border-b border-gray-800 relative">
+    <!-- Compact Header Banner -->
+    <header class="py-8 bg-[#001122] border-b border-gray-800 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">
           Our Team
         </h1>
-        <p class="text-lg text-gray-300 max-w-2xl font-light">
+        <p class="text-base text-gray-300 max-w-2xl font-light">
           Meet the dedicated students driving The Cardio Collective forward, and
           learn how you can get involved with our mission.
         </p>
       </div>
     </header>
 
-    <main class="py-20">
+    <main class="py-8">
+      <!-- Compact Founder Note -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div
+          class="bg-cardbg/70 rounded-xl border border-gray-800 px-6 py-4 shadow-md"
+        >
+          <h2 class="text-base font-bold text-maize mb-1.5">
+            A note from the founder
+          </h2>
+          <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+            &ldquo;I founded this club because of my passion for promoting
+            cardiovascular health in the community and beyond. Through
+            education, service, action, and outreach, my vision when I started
+            this club was to bring together like-minded undergraduate students
+            passionate about cardiology and medicine who all share a common goal
+            of striving to make a lasting impact on cardiovascular health and
+            wellness in the Ann Arbor community and beyond. Cardiovascular
+            disease is the number one cause of death and so many across the
+            country and world are directly impacted by CVD, whether that be
+            themselves or an immediate family member. My goal when founding this
+            organization was to address this epidemic in my own community through
+            community engagement, outreach, and educational initiatives, all led
+            by undergraduate students at the University of Michigan who share a
+            common passion for the same things as I do. As someone who deeply
+            understands the profound impact cardiovascular disease can have on a
+            patient&rsquo;s life and on those surrounding them, I remain
+            committed to my mission of spreading awareness of the importance of
+            cardiovascular health, wellness, and prevention. I hope that you
+            join us and support us in this important work that we are
+            doing.&rdquo;
+            <span class="font-semibold text-white ml-1">&mdash; Eryn Stern</span>
+          </p>
+        </div>
+      </section>
+
       <!-- Board Section -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-        <div class="mb-12 text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Board</h2>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div class="mb-8 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+            Executive Board
+          </h2>
           <div class="w-16 h-1 bg-maize rounded-full mx-auto"></div>
         </div>
 
-        <!-- Coming Soon Placeholder -->
-        <div
-          class="max-w-2xl mx-auto bg-cardbg rounded-xl border border-gray-800 p-12 text-center shadow-lg"
-        >
+        <!-- Board Member Cards Grid (4 per row on desktop) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 1. Andrew Mulhem -->
           <div
-            class="w-20 h-20 bg-navy rounded-full flex items-center justify-center text-maize text-4xl mx-auto mb-6 border border-gray-700"
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
           >
-            <i class="fa-solid fa-user-clock"></i>
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/andrew.webp"
+                alt="Andrew Mulhem"
+                class="w-full h-full object-cover object-[60%_top]"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Co-President
+              </span>
+              <h3 class="text-lg font-bold text-white">Andrew Mulhem</h3>
+              <p class="text-xs text-gray-400 mb-3">Biology &bull; Senior</p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I joined Cardio Collective to explore my interest in cardiology
+                beyond the classroom and gain a better understanding of the
+                field through hands-on experiences and exposure to healthcare
+                professionals. I also wanted to be part of a community of
+                students who share an interest in medicine and a drive to learn.
+              </p>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-4">Coming Soon</h3>
-          <p class="text-gray-300 text-lg">
-            We are currently finalizing our board for the upcoming semester.
-            Check back soon to meet our leadership team!
-          </p>
+
+          <!-- 2. Aaradhya Shrivastava -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/aaradhya.webp"
+                alt="Aaradhya Shrivastava"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Director of Education
+              </span>
+              <h3 class="text-lg font-bold text-white">
+                Aaradhya Shrivastava
+              </h3>
+              <p class="text-xs text-gray-400 mb-3">MCDB &bull; Sophomore</p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I wanted to help raise awareness for heart healthy lifestyles.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Anna Liao -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/anna.webp"
+                alt="Anna Liao"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Director of Operations
+              </span>
+              <h3 class="text-lg font-bold text-white">Anna Liao</h3>
+              <p class="text-xs text-gray-400 mb-3">
+                Biophysics &bull; Sophomore
+              </p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Cardio Collective made navigating the pre-health maze a lot
+                easier and I loved the people I met!
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Alyssa Goretzka -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div
+              class="aspect-[4/5] w-full overflow-hidden bg-navy flex flex-col items-center justify-center border-b border-gray-800"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-darkbg border-2 border-maize/40 flex items-center justify-center text-maize text-2xl font-bold"
+              >
+                AG
+              </div>
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Director of Fundraising
+              </span>
+              <h3 class="text-lg font-bold text-white">Alyssa Goretzka</h3>
+              <p class="text-xs text-gray-400 mb-3">Junior</p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I aspire to enter the realm of healthcare, and this club has
+                given me so many opportunities to learn more about
+                cardiovascular health in order to help me grow in my future
+                career.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Ainsley Brunette -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/ainsley.webp"
+                alt="Ainsley Brunette"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Recruitment Chair
+              </span>
+              <h3 class="text-lg font-bold text-white">Ainsley Brunette</h3>
+              <p class="text-xs text-gray-400 mb-3">Biology &bull; Freshman</p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I knew coming into college I wanted to find cardiology clubs. At
+                Festifall, I immediately found the Cardio Collective and
+                everyone was so welcoming. The club has so many great
+                opportunities to get involved and get insights to the medical
+                world.
+              </p>
+            </div>
+          </div>
+
+          <!-- 6. Ananya Sharma -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/ananya.webp"
+                alt="Ananya Sharma"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Recruitment Chair
+              </span>
+              <h3 class="text-lg font-bold text-white">Ananya Sharma</h3>
+              <p class="text-xs text-gray-400 mb-3">Biology &bull; Freshman</p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I joined Cardio Collective because I aspire to be a cardiologist
+                and wanted to explore cardiovascular medicine beyond the
+                classroom. I also wanted to connect with peers who share similar
+                interests in medicine and get involved with health-related
+                opportunities across campus!
+              </p>
+            </div>
+          </div>
+
+          <!-- 7. Vanessa Rodgers -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/vanessa.webp"
+                alt="Vanessa Rodgers"
+                class="w-full h-full object-cover object-[90%_top]"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Social Chair
+              </span>
+              <h3 class="text-lg font-bold text-white">Vanessa Rodgers</h3>
+              <p class="text-xs text-gray-400 mb-3">
+                Molecular, Cellular, and Developmental Biology &bull; Junior
+              </p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I am very interested in cardiology and eager to build community
+                with peers who share the same interest. Much of my focus is tied
+                to academic research, so I’m looking forward to engaging with
+                the subject in a more relaxed and social setting.
+              </p>
+            </div>
+          </div>
+
+          <!-- 8. Zoeya Ahmad -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div
+              class="aspect-[4/5] w-full overflow-hidden bg-navy flex flex-col items-center justify-center border-b border-gray-800"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-darkbg border-2 border-maize/40 flex items-center justify-center text-maize text-2xl font-bold"
+              >
+                ZA
+              </div>
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Event Coordinator
+              </span>
+              <h3 class="text-lg font-bold text-white">Zoeya Ahmad</h3>
+              <p class="text-xs text-gray-400 mb-3">
+                Neuroscience &bull; Freshman
+              </p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I’m looking forward to getting to know other pre-med and
+                pre-health students!
+              </p>
+            </div>
+          </div>
+
+          <!-- 9. Krish Mahajan -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div
+              class="aspect-[4/5] w-full overflow-hidden bg-navy flex flex-col items-center justify-center border-b border-gray-800"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-darkbg border-2 border-maize/40 flex items-center justify-center text-maize text-2xl font-bold"
+              >
+                KM
+              </div>
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Events Coordinator
+              </span>
+              <h3 class="text-lg font-bold text-white">Krish Mahajan</h3>
+              <p class="text-xs text-gray-400 mb-3">
+                Biology, Health, and Society (BHS) &bull; Sophomore
+              </p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I joined Cardio Collective, so I would have the opportunity to
+                collaborate with the undergraduate students on campus to make an
+                impact in the community. I wanted to work with others to spread
+                health equity within the Ann Arbor community.
+              </p>
+            </div>
+          </div>
+
+          <!-- 10. Julianna Heung -->
+          <div
+            class="bg-cardbg rounded-xl border border-gray-800 overflow-hidden hover:border-maize/50 transition duration-300 flex flex-col shadow-lg"
+          >
+            <div class="aspect-[4/5] w-full overflow-hidden bg-navy">
+              <img
+                src="assets/julianna.webp"
+                alt="Julianna Heung"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-maize mb-1"
+              >
+                Executive Board
+              </span>
+              <h3 class="text-lg font-bold text-white">Julianna Heung</h3>
+              <p class="text-xs text-gray-400 mb-3">
+                Neuroscience &bull; Sophomore
+              </p>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                I wanted to learn more about heart health while raising
+                awareness of heart disease and creating opportunities for
+                members to learn more about cardiology!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

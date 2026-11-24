@@ -7,7 +7,46 @@
       name="google-site-verification"
       content="DCZ3xLLhv-u7mhrNSb0mzzfLrBEt0GhcdNCA1hqYcMk"
     />
-    <title>Home - The Cardio Collective</title>
+    <title>The Cardio Collective | University of Michigan</title>
+    <meta
+      name="description"
+      content="The Cardio Collective is a student-run organization at the University of Michigan dedicated to heart health awareness, CPR training, and community outreach in Ann Arbor."
+    />
+
+    <!-- Favicon for Google Search & Browser Tabs -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp" />
+    <link rel="apple-touch-icon" href="assets/logo.webp" />
+
+    <!-- Open Graph / Social & Search Preview Tags -->
+    <meta property="og:site_name" content="The Cardio Collective" />
+    <meta
+      property="og:title"
+      content="The Cardio Collective | University of Michigan"
+    />
+    <meta
+      property="og:description"
+      content="Spreading heart health awareness at the University of Michigan through student-led education, clinical workshops, and community outreach."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://umich-cardio-collective.github.io/cardio-collective/"
+    />
+    <meta
+      property="og:image"
+      content="https://umich-cardio-collective.github.io/cardio-collective/assets/logo.webp"
+    />
+
+    <!-- Structured Data (Replaces "GitHub Pages documentation" in Google Search) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "The Cardio Collective",
+        "alternateName": "The Cardio Collective at the University of Michigan",
+        "url": "https://umich-cardio-collective.github.io/cardio-collective/"
+      }
+    </script>
     <base target="_top" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,7 +106,7 @@
         <div class="flex justify-between h-20 items-center">
           <div class="flex items-center gap-3">
             <img
-              src="https://lh3.googleusercontent.com/d/1Z4pZlh9Hk_q9PFXOQM0k-1BPSC4rvorl"
+              src="assets/logo.webp"
               alt="The Cardio Collective Logo"
               class="h-12 w-12 rounded-full border border-gray-700 object-cover"
             />
@@ -108,63 +147,212 @@
             <button
               id="mobile-menu-btn"
               class="text-gray-300 hover:text-maize focus:outline-none p-2"
+              aria-label="Toggle menu"
             >
               <i class="fa-solid fa-bars text-2xl"></i>
             </button>
           </div>
         </div>
       </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#050B14] border-b border-gray-800 px-4 pt-2 pb-4 space-y-2 text-sm font-medium"
+      >
+        <a href="index.html" class="block py-2 text-maize transition">Home</a>
+        <a
+          href="members.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Members</a
+        >
+        <a
+          href="projects.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Projects</a
+        >
+        <a
+          href="cardioblog.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Blog</a
+        >
+        <a
+          href="contactUs.html"
+          class="block py-2 text-gray-300 hover:text-maize transition"
+          >Contact Us</a
+        >
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <main class="flex-grow flex items-center pt-10 pb-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <!-- Text Content -->
-          <div>
-            <h1
-              class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
-            >
-              The Cardio Collective at the University of Michigan
-            </h1>
-            <p
-              class="text-lg text-gray-300 mb-8 max-w-lg font-light leading-relaxed"
-            >
-              Spreading Heart Health Awareness at the University of Michigan. We
-              are an entirely student run organization dedicated to education
-              and public health initiatives.
-            </p>
-            <div class="flex flex-wrap items-center gap-6">
-              <a
-                href="projects.html"
-                class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-md hover:bg-blue-700 transition duration-300"
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div>
+              <span
+                class="inline-block text-xs font-bold uppercase tracking-wider text-maize bg-navy/80 border border-gray-700 px-3 py-1 rounded-full mb-4"
               >
-                Learn more
-              </a>
-              <a
-                href="members.html"
-                class="text-white font-medium hover:text-gray-300 transition duration-300 flex items-center"
+                University of Michigan Student Organization
+              </span>
+              <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
               >
-                Join our team <i class="fa-solid fa-arrow-right ml-2"></i>
-              </a>
+                The Cardio Collective
+              </h1>
+              <p
+                class="text-lg text-gray-300 mb-8 max-w-lg font-light leading-relaxed"
+              >
+                Spreading heart health awareness at the University of Michigan
+                and across Ann Arbor through student-led education, clinical
+                workshops, and community outreach.
+              </p>
+              <div class="flex flex-wrap items-center gap-5">
+                <a
+                  href="projects.html"
+                  class="bg-maize text-navy font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition duration-300"
+                >
+                  Explore Our Projects
+                </a>
+                <a
+                  href="members.html"
+                  class="border-2 border-gray-700 text-white font-semibold py-3 px-7 rounded-lg hover:border-maize hover:text-maize transition duration-300 flex items-center"
+                >
+                  Meet Our Team <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <!-- Image/Logo Content -->
-          <div class="flex justify-center lg:justify-end">
-            <div
-              class="bg-[#050B14] rounded-2xl border border-gray-800 p-8 flex items-center justify-center w-full max-w-lg shadow-2xl"
-            >
-              <!-- Using object-contain ensures the image fits inside the box without clipping -->
-              <img
-                src="https://lh3.googleusercontent.com/d/1Z4pZlh9Hk_q9PFXOQM0k-1BPSC4rvorl"
-                alt="Cardio Collective Logo"
-                class="w-full h-auto object-contain drop-shadow-lg"
-              />
+            <!-- Image/Logo Content -->
+            <div class="flex justify-center lg:justify-end">
+              <div
+                class="bg-[#050B14] rounded-2xl border border-gray-800 p-8 flex items-center justify-center w-full max-w-md shadow-2xl"
+              >
+                <img
+                  src="assets/logo.webp"
+                  alt="Cardio Collective Logo"
+                  class="w-full h-auto object-contain drop-shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- About the Club Section -->
+      <section class="bg-[#001122] border-y border-gray-800 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+            About The Club
+          </h2>
+          <div class="w-16 h-1 bg-maize rounded-full mx-auto mb-8"></div>
+
+          <div
+            class="space-y-5 text-gray-300 text-base md:text-lg font-light leading-relaxed text-left md:text-center"
+          >
+            <p>
+              The Cardio Collective was founded at the University of Michigan out
+              of a passion for promoting cardiovascular health across the Ann
+              Arbor community and beyond. Through education, service, action,
+              and outreach, the organization was established to unite
+              undergraduate students interested in cardiology and medicine
+              around a shared commitment to making a lasting impact on community
+              wellness.
+            </p>
+            <p>
+              Because cardiovascular disease remains the leading cause of
+              death—affecting countless individuals and families worldwide—The
+              Cardio Collective strives to combat this epidemic locally through
+              student-led educational initiatives and community engagement.
+              Recognizing the profound impact cardiovascular disease has on
+              patients and their loved ones, the organization remains dedicated
+              to spreading awareness of heart health, wellness, and preventive
+              care, and welcomes students of all backgrounds to join its
+              mission.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flagship Initiatives Preview -->
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4"
+          >
+            <div>
+              <h2 class="text-3xl font-bold text-white mb-2">What We Do</h2>
+              <p class="text-gray-400">
+                Hands-on clinical experiences and public health outreach open to
+                all U-M students.
+              </p>
+            </div>
+            <a
+              href="projects.html"
+              class="text-maize font-semibold hover:underline flex items-center text-sm"
+            >
+              View all 7 initiatives <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Highlight 1 -->
+            <div
+              class="bg-cardbg rounded-xl border border-gray-800 p-7 hover:border-maize/50 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-maize text-xl mb-5 border border-gray-700"
+              >
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Free CPR &amp; AED Training
+              </h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Accessible hands-on training sessions equipping students and
+                community members with life-saving emergency response skills.
+              </p>
+            </div>
+
+            <!-- Highlight 2 -->
+            <div
+              class="bg-cardbg rounded-xl border border-gray-800 p-7 hover:border-maize/50 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-maize text-xl mb-5 border border-gray-700"
+              >
+                <i class="fa-solid fa-children"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                CAN Youth Outreach
+              </h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Partnering with local elementary schools to teach students the
+                foundations of heart-healthy habits early in life.
+              </p>
+            </div>
+
+            <!-- Highlight 3 -->
+            <div
+              class="bg-cardbg rounded-xl border border-gray-800 p-7 hover:border-maize/50 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-maize text-xl mb-5 border border-gray-700"
+              >
+                <i class="fa-solid fa-helicopter"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Clinical Exposure
+              </h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                From Michigan Medicine Survival Flight tours to suture clinics
+                and physician panels, members explore cardiology firsthand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -172,12 +360,39 @@
       class="bg-[#050B14] text-gray-400 py-8 border-t border-gray-800 mt-auto"
     >
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"
       >
-        <div class="flex items-center mb-4 md:mb-0">
-          <span class="font-bold text-white text-base mr-2"
+        <div class="flex items-center gap-6">
+          <span class="font-bold text-white text-base"
             >The Cardio Collective</span
           >
+          <div class="flex items-center gap-4 text-gray-400">
+            <a
+              href="https://www.instagram.com/thecardiocollective_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="hover:text-maize transition"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a
+              href="mailto:cardiocollectiveboard@umich.edu"
+              aria-label="Email"
+              class="hover:text-maize transition"
+            >
+              <i class="fa-solid fa-envelope text-lg"></i>
+            </a>
+            <a
+              href="https://maizepages.umich.edu/organization/thecardiocollective"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Maize Pages"
+              class="hover:text-maize transition"
+            >
+              <i class="fa-solid fa-users text-lg"></i>
+            </a>
+          </div>
         </div>
         <p>&copy; 2026 The Cardio Collective at the University of Michigan.</p>
       </div>
